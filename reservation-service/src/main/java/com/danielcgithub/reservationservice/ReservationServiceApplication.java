@@ -19,6 +19,7 @@ import org.springframework.data.rest.core.annotation.RestResource;
 @SpringBootApplication
 public class ReservationServiceApplication {
 
+	// runs on instantiation and creates the reservations as test data
 	@Bean
 	CommandLineRunner commandLineRunner(ReservationRepository reservationRepository) {
 		return strings -> {
